@@ -12,6 +12,7 @@
 		84C572CE1F38F45800FD7FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C572CC1F38F45800FD7FA4 /* Main.storyboard */; };
 		84C572D01F38F45800FD7FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C572CF1F38F45800FD7FA4 /* Assets.xcassets */; };
 		84C572D31F38F45800FD7FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C572D11F38F45800FD7FA4 /* LaunchScreen.storyboard */; };
+		84C572DB1F38F50E00FD7FA4 /* DesignableButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C572DA1F38F50E00FD7FA4 /* DesignableButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		84C572CF1F38F45800FD7FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C572D21F38F45800FD7FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C572D41F38F45800FD7FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C572DA1F38F50E00FD7FA4 /* DesignableButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableButtonView.swift; path = ../DesignableButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		84C572C71F38F45800FD7FA4 /* IntroToDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				84C572DA1F38F50E00FD7FA4 /* DesignableButtonView.swift */,
 				84C572C81F38F45800FD7FA4 /* AppDelegate.swift */,
 				84C572CA1F38F45800FD7FA4 /* ViewController.swift */,
 				84C572CC1F38F45800FD7FA4 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				84C572CB1F38F45800FD7FA4 /* ViewController.swift in Sources */,
 				84C572C91F38F45800FD7FA4 /* AppDelegate.swift in Sources */,
+				84C572DB1F38F50E00FD7FA4 /* DesignableButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
