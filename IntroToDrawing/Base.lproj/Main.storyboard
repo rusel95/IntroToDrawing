@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6k-BB-Kt8" customClass="DesignableButtonView" customModule="IntroToDrawing" customModuleProvider="target">
-                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <rect key="frame" x="137" y="343" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="S4T-9n-v8W"/>
                                     <constraint firstAttribute="width" constant="100" id="wyf-Vb-dbL"/>
@@ -38,12 +38,15 @@
                                         <real key="value" value="0.90000000000000002"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAO-e9-11H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZQ-Yk-NGa" customClass="DesignableButtonView" customModule="IntroToDrawing" customModuleProvider="target">
-                                <rect key="frame" x="164" y="451" width="46" height="30"/>
+                                <rect key="frame" x="162" y="511" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="8Ol-la-Z0I"/>
-                                    <constraint firstAttribute="height" constant="30" id="aAC-B0-Pq0"/>
+                                    <constraint firstAttribute="width" constant="50" id="8Ol-la-Z0I"/>
+                                    <constraint firstAttribute="height" constant="50" id="aAC-B0-Pq0"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineLong">
@@ -53,17 +56,60 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAdd" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwm-sV-jaL"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGZ-wg-vMw" customClass="Counter" customModule="IntroToDrawing" customModuleProvider="target">
+                                <rect key="frame" x="67" y="44" width="240" height="209"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJR-1Q-HNJ">
+                                        <rect key="frame" x="105.5" y="89.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="I2Q-uB-AWj"/>
+                                            <constraint firstAttribute="width" constant="30" id="cfJ-bI-WDS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FJR-1Q-HNJ" firstAttribute="centerY" secondItem="OGZ-wg-vMw" secondAttribute="centerY" id="8PK-dq-Uyg"/>
+                                    <constraint firstAttribute="height" constant="209" id="Emo-wO-K1z"/>
+                                    <constraint firstItem="FJR-1Q-HNJ" firstAttribute="centerX" secondItem="OGZ-wg-vMw" secondAttribute="centerX" id="IDd-Bc-CzO"/>
+                                    <constraint firstAttribute="width" constant="240" id="eav-bY-8Lk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outlineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="1" green="0.74480932799999999" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Q6k-BB-Kt8" firstAttribute="top" secondItem="OGZ-wg-vMw" secondAttribute="bottom" constant="90" id="2XQ-sL-hQz"/>
+                            <constraint firstItem="OGZ-wg-vMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7oM-mA-47e"/>
                             <constraint firstItem="Q6k-BB-Kt8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEJ-I5-8Dx"/>
+                            <constraint firstItem="OGZ-wg-vMw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="dvX-8Q-f0O"/>
                             <constraint firstItem="hZQ-Yk-NGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eC9-w3-odi"/>
-                            <constraint firstItem="Q6k-BB-Kt8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="laH-Cu-QBg"/>
                             <constraint firstItem="hZQ-Yk-NGa" firstAttribute="top" secondItem="Q6k-BB-Kt8" secondAttribute="bottom" constant="68" id="y8E-Yw-bWH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="FJR-1Q-HNJ" id="3YL-aQ-gJk"/>
+                        <outlet property="counterView" destination="OGZ-wg-vMw" id="kZK-U7-EGH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

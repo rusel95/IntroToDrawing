@@ -19,7 +19,7 @@ import UIKit
     @IBInspectable var lineWidth : CGFloat = 3.0
     @IBInspectable var lineLong : CGFloat = 0.7
     
-    @IBInspectable var isAdd : Bool = true
+    @IBInspectable var isAddButton : Bool = true
     
     override func draw(_ rect: CGRect) {
         
@@ -36,7 +36,7 @@ import UIKit
 
     func drawSign() {
         drawHorizontalDash()
-        if isAdd {
+        if isAddButton {
             drawVerticalDash()
         }
     }
